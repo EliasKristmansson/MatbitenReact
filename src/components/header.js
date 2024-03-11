@@ -8,7 +8,7 @@ class Header extends React.Component {
 			<header>
 				<div id="headerDiv1">
 					<a href="/"><img id="logo" style={{ height:'70px' }} alt="Logga för hemsidan" src={logo} /></a>
-					<h1 id="titleID">hej</h1>
+					<h1 id="titleID">MATBITEN</h1>
 					<div id="hamburgerMenu">
 						<img style={{ height: '40px' }} alt="Hamburgermeny" src={hamburgerMenu} />
 						<div class="dropdown-content">
