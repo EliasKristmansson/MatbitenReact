@@ -4,6 +4,8 @@ import facebook from '../img/facebook.png';
 import instagram from '../img/instagram.png';
 import twitter from '../img/twitter.png';
 
+import { NavLink } from "react-router-dom";
+
 class Contact extends React.Component {
 	render() {
 		return(
@@ -34,9 +36,9 @@ class Contact extends React.Component {
 				</div>
 				<p id="kontaktInfoText">
 					Pizzeria Matbiten - Umedalsallén 25 Umeå <br />Telefon - 090-316 00<br />
-					<a href="https://www.facebook.com/?locale=sv_SE" rel="noreferrer" target="_blank"><img className="socialMedia" alt="Facebook" src={facebook} /></a>
-					<a href="https://www.instagram.com/" rel="noreferrer" target="_blank"><img className="socialMedia" alt="Instagram" src={instagram} /></a>
-					<a href="https://twitter.com/?lang=sv" rel="noreferrer" target="_blank"><img className="socialMedia" alt="Facebook" src={twitter} /></a>
+					<NavLink to="https://www.facebook.com/?locale=sv_SE" rel="noreferrer" target="_blank"><img className="socialMedia" alt="Facebook" src={facebook} /></NavLink>
+					<NavLink to="https://www.instagram.com/" rel="noreferrer" target="_blank"><img className="socialMedia" alt="Instagram" src={instagram} /></NavLink>
+					<NavLink to="https://twitter.com/?lang=sv" rel="noreferrer" target="_blank"><img className="socialMedia" alt="Facebook" src={twitter} /></NavLink>
 				</p>
 			</div>
 		);

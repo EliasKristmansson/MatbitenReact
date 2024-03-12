@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import background from '../img/background.jpg';
 import dagensImg from '../img/brick-oven-pizza.jpg';
 
@@ -6,8 +7,8 @@ class Menu extends React.Component {
 	render() {
 		return(
 			<div id="container2">
-				<h1 id="menuID"><a href="menu" id="aTagMenu">MENY</a></h1>
-				<h1 id="deliveryID"><a href="delivery" id="aTagDelivery">DELIVERY</a></h1>
+				<h1 id="menuID"><NavLink to="/menu" id="aTagMenu">MENY</NavLink></h1>
+				<h1 id="deliveryID"><NavLink to="/delivery" id="aTagDelivery">DELIVERY</NavLink></h1>
 
 				<img id="backgroundImage" alt="Bakgrund för hemsidan" src={background} />
 				<div id="menuContainer">
